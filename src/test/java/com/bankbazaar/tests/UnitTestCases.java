@@ -1,3 +1,5 @@
+package com.bankbazaar.tests;
+
 import com.bankbazaar.servlets.HackathonServlet;
 import org.junit.Assert;
 import org.junit.Test;
@@ -16,7 +18,7 @@ import static org.mockito.Mockito.when;
 public class UnitTestCases {
 
     @Test
-    public void testAdminPage()
+    public void testCase1()
     {
         /*HttpServletRequest request = mock(HttpServletRequest.class);
         HttpServletResponse response = mock(HttpServletResponse.class);
@@ -24,24 +26,27 @@ public class UnitTestCases {
         when(request.getParameter("username")).thenReturn("me");
         when(request.getParameter("password")).thenReturn("secret");*/
         Assert.assertEquals(true, true);
-
+        System.out.println("Unit test case1 executed successfully");
     }
 
     @Test
     public void testCase2()
     {
         Assert.assertEquals(true, true);
+        System.out.println("Unit test case2 executed successfully");
     }
 
     @Test
     public void testCase3()
     {
         Assert.assertEquals(true, true);
+        System.out.println("Unit test case3 executed successfully");
     }
 
     @Test
     public void testCase4()
     {
         Assert.assertEquals(true, true);
+        System.out.println("Unit test case4 executed successfully");
     }
 }
