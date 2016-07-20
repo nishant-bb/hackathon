@@ -26,6 +26,7 @@ public class HackathonServlet extends HttpServlet {
         RequestDispatcher dispatcher = req.getRequestDispatcher("/" + page + ".jsp");
         dispatcher.forward(req,resp);
     }
+    
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     }
