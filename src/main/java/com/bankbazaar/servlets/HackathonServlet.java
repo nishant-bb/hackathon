@@ -26,18 +26,20 @@ public class HackathonServlet extends HttpServlet {
         RequestDispatcher dispatcher = req.getRequestDispatcher("/" + page + ".jsp");
         dispatcher.forward(req,resp);
     }
-    
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     }
 
     private String processAdminRequest(HttpServletRequest req, HttpServletResponse resp)
     {
+        System.out.println("Admin request processor");
         return "admin";
     }
 
     private String processCustomerRequest(HttpServletRequest req, HttpServletResponse resp)
     {
+        System.out.println("Admin customer processor");
         return "customer";
     }
 }
