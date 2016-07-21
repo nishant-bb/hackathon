@@ -24,6 +24,7 @@ public class HackathonServlet extends HttpServlet {
         String page = req.getParameter("page");
         page = (page == null) ? "sample" : page;
         RequestDispatcher dispatcher = req.getRequestDispatcher("/" + page + ".jsp");
+        
         dispatcher.forward(req,resp);
     }
 
